@@ -3,7 +3,7 @@
 This project is a premium, modern, and highly interactive **Design Agency Homepage** built as a part of the Next.js Developer Internship Task evaluation. 
 
 ## 🌐 Live Demo & Repository
-*   **GitHub Repository:** `(To be updated after pushing remote)`
+*   **GitHub Repository:** [design_agency_homepage](https://github.com/Alagu-A/design_agency_homepage)
 *   **Vercel Live Deployment:** `(To be configured upon Vercel link)`
 
 ---
