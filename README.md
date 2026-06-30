@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AURA | Creative Digital Agency Homepage
 
-## Getting Started
+This project is a premium, modern, and highly interactive **Design Agency Homepage** built as a part of the Next.js Developer Internship Task evaluation. 
 
-First, run the development server:
+## 🌐 Live Demo & Repository
+*   **GitHub Repository:** `(To be updated after pushing remote)`
+*   **Vercel Live Deployment:** `(To be configured upon Vercel link)`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Tech Stack Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: [Next.js 13+ (App Router)](https://nextjs.org/) — Utilizing standard Server & Client Component separation, routing, optimization features, and viewport boundaries.
+- **Language**: [TypeScript](https://www.typescriptlang.org/) — For type-safety and robust code patterns.
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) — For rapid styling, fully custom scrollbars, and dark mode variant classes.
+- **Animations**: [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/) — Supporting smooth scroll-triggered slide and fade animations on sections and cards.
+- **Icons**: [Lucide React](https://lucide.dev/) — High-quality, clean, and customizable icon set.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ✨ Features & Design Highlights
 
-To learn more about Next.js, take a look at the following resources:
+1.  **Premium Aesthetics**: Curated dark & light modes. The design features soft gradients, clean cards, elegant spacing, subtle border glows (`glow-indigo`/`glow-purple`), and glassmorphism elements.
+2.  **Dark Mode Toggle**: A responsive theme toggler in the header with persistent preferences stored in `localStorage`. Uses a head-injection theme-detector script to eliminate hydration flash layout shift.
+3.  **Responsive Hero**: A visually engaging header featuring custom 3D generated abstract artwork, bold copy, responsive grid layout, and interactive float badges.
+4.  **Specialized Services Card Grid**: Dynamic service grid highlighting UI/UX Design, Web Development, Branding, and Digital Marketing with hover scales and staggered entrance animations.
+5.  **Interactive Portfolio Filters**: A premium showcase grid supporting real-time filter categories (All, UI/UX, Development, Branding) and smooth overlay hover states.
+6.  **Validating Contact Form**: Clean form controls with client-side regex validations, interactive inline feedback warnings, simulated async API loading transitions, and an elegant visual success state.
+7.  **Performance Optimization**: Utilizes `next/image` for responsive, optimized, and layout-shift-free rendering of portfolio and background images.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Setup & Running Locally
 
-## Deploy on Vercel
+Ensure you have [Node.js (v18+)](https://nodejs.org/) installed on your machine.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1.  **Clone the Repository**:
+    ```bash
+    git clone <repository-url>
+    cd design-agency-homepage
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2.  **Install Dependencies**:
+    ```bash
+    npm install
+    ```
+
+3.  **Run Development Server**:
+    ```bash
+    npm run dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) with your browser to view the homepage.
+
+4.  **Build Production Bundle**:
+    ```bash
+    npm run build
+    ```
+
+---
+
+## 📝 Assumptions & Adjustments
+- **Offline Builds (No Google Fonts)**: Google fonts import (`Geist`, `Geist Mono`) was swapped with a custom system font fallback stack (`system-ui`, `-apple-system`, etc.) in the theme settings. This ensures the Next.js production build does not require active internet or hit font fetching blockages.
+- **Inline Brand SVGs**: Since brand icons (GitHub, LinkedIn, Twitter, Instagram) are deprecated in the core `lucide-react` module, we utilized hand-styled, inline SVGs for social media links in the Footer component to ensure complete compile safety and pixel-perfect brand assets.
